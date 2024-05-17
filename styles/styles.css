@@ -7,9 +7,14 @@ body{
     background-color: rgb(255, 235, 205);
 }
 .container{
+    width: 100%;
+    height: auto;
     border: 10px;
     border-color: rgb(255, 76, 45);
     border-style: solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items horizontally */
 }
 .menu-title{
     width: 70%;
@@ -24,21 +29,24 @@ body{
 h2.menu-item{
     width: 100%;
     text-align: center;
-    margin: 5px;
+    margin: 5px auto;
 }
 .menu-img{
-    width: 100%;
-    margin: 0 auto;
+    height: auto;
+    width: 85%;
+    display: block;
+    margin: 0 auto; 
     border-radius: 10px; 
 }
 .menu-sections{
+    display: flex;
+    justify-content: center; /* Center align items horizontally */
+    align-items: center; /* Center align items vertically, if needed */
+    flex-direction: column; /* Ensure elements stack vertically */
     width: 50%;
     height: auto;
     margin: 8px auto;
     padding: 8px;
-    /* border: 3px;
-    border-color: black;
-    border-style: solid; */
     background-color: rgb(241, 213, 177);
     border-radius: 10px; 
 }
